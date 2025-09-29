@@ -9,4 +9,6 @@ jobs:
   build:
     steps:
       - name: SonarQube
+        with:
+          language: JAVA
         uses: cloudbees-io/sonarqube-bundled-sast-scan-code@v2
